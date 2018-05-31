@@ -11,6 +11,7 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
 		return null;
+		
 	}
 
 }

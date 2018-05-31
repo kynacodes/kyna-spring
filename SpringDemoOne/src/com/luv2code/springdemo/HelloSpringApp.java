@@ -6,7 +6,7 @@ public class HelloSpringApp {
 
 	public static void main(String[] args) {
 		
-		//load Spring Configuration/"config" file (This is what he called "create spring container" before)
+		//load Spring Configuration/"config" file ("create spring container")
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//retrieve a bean from spring container
@@ -14,6 +14,9 @@ public class HelloSpringApp {
 		
 		//call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
+		
+		//call the method for fortunes
+		System.out.println(theCoach.getDailyFortune());
 		
 		//close the (application) context
 		context.close();
